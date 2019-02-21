@@ -1,0 +1,58 @@
+body {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "header header header" "navigation navigation navigation" "body-1 body-2 body-3" "footer footer footer";
+}
+
+header {
+    background-color: red;
+    text-align: center;
+    padding: 3em;
+}
+
+header > h1 {
+    font-size: 250%;
+}
+
+/* Navigation */
+nav, footer {
+    background-color: purple;
+}
+
+nav ul, footer ul {
+    font-size: 0;
+    display: flex;
+}
+
+nav li, footer li {
+    display: inline-block;
+    flex: 1;
+}
+
+nav a, footer a {
+    font-size: initial;
+    display: block;
+    line-height: 76px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+article {
+    padding: 1em;
+}
+
+article:nth-of-type(1){
+    background-color: blue;
+    color: white;
+}
+
+
+article:nth-of-type(2){
+    background-color: white;
+}
+
+
+article:nth-of-type(3){
+    background-color: yellow;
+}

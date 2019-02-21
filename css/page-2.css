@@ -1,0 +1,77 @@
+body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr auto;
+    grid-template-areas: "header header header" "navigation navigation navigation" "body-1 body-1 body-1" "body-2 body-2 body-2" "body-3 body-3 body-3" "footer footer footer";
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    padding: 3em;
+}
+
+header > h1 {
+    font-size: 250%;
+    font-family: 'Permanent Marker', cursive;
+}
+
+header > a {
+    color: black;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+a,h2,h3,h4,h5,h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Navigation */
+nav, footer {
+    background-color: purple;
+}
+
+nav ul, footer ul {
+    font-size: 0;
+    display: flex;
+}
+
+nav li, footer li {
+    display: inline-block;
+    flex: 1;
+}
+
+nav a, footer a {
+    font-size: initial;
+    display: block;
+    line-height: 76px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+article {
+    padding: 1em;
+    color: white;    
+}
+
+article:nth-of-type(1){
+    background-color: hsl(207, 44%, 40%);
+}
+
+
+article:nth-of-type(2){
+    background-color:#4582b3;
+}
+
+
+article:nth-of-type(3){
+    background-color:#396a92;
+}
