@@ -1,0 +1,24 @@
+/* Grid areas */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas: "nav nav nav" "article-1 article-2 article-3" "footer footer footer";
+    min-height: 100vh;
+}
+  
+.nav { 
+    grid-area: nav; 
+    background-color: red;
+}
+  
+.article-1 { grid-area: article-1; }
+  
+.article-2 { grid-area: article-2; }
+  
+.article-3 { grid-area: article-3; }
+  
+.footer {
+    grid-area: footer; 
+    background-color: green;
+}
